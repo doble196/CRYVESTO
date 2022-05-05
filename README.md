@@ -44,7 +44,7 @@ STEP 5: To install the remaining packages, while in this same repo in your Termi
 
 ## Contributors
 
-Ashok Pandey, Scott Marler, Rensley Ramos, Nicole Roberts, Dane 
+Ashok Pandey, Scott Marler, Rensley Ramos, Nicole Roberts, Dane Hayes
 
 ---
 
