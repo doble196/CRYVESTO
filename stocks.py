@@ -1,6 +1,32 @@
 
 
-def stocks(stock1, stock2):
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""def stocks(stock1, stock2):
     sum = stock1 + stock2
     return sum 
 
