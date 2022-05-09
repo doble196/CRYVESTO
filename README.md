@@ -1,6 +1,7 @@
 # Cryvesto
 
 Analysis file only. Please only pull, no pushes.
+<<<<<<< HEAD
 
 # Cryvesto CLI Application
 
@@ -18,3 +19,5 @@ After cloning the code,
     - $ cd Project-1
     - $ python mailine.py
     
+=======
+>>>>>>> main
