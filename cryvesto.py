@@ -28,9 +28,9 @@ ticker_list = { 'BTC-USD': 'Bitcoin',
 }
 
 
-etf_list={'SPY': 'S&P 500',
+etf_list={'SPY': 'S&P 500  ',
     'IYW':'iShares U.S. Technology',
-    'QQQ': 'Nasdaq 100',
+    'QQQ': 'Nasdaq 100     ',
     'RYT': 'Invesco S&P 500 Equal Weight Technology',
     'IETC': 'iShares Evolved U.S. Technology',
     'IWM': 'iShares Russell 2000',
@@ -46,6 +46,9 @@ _____________________________________
 A SMART WAY TO BUILD YOUR PORTFOLIO
 _____________________________________'''
 print(x)
+
+end = dt.date(2022,3,31)
+start = dt.date(end.year- 3, end.month, end.day)
 
 # ask the user for the cryptos s/he wants to put in his/her portfolio. a max of 2 is allowed
 # you can exit by entering EXIT, x, X, exit
@@ -77,7 +80,7 @@ while try_again:
 
 #Do a Four Factor Analysis on each of the Cryptos selected           
 for crypto in tickers_crypto:
-    ff.ffanalyse(crypto)
+    ff.ffanalyse(crypto, start, end)
     #ca.analyse(tickers)
 
 # ask the user for the ETFs s/he wants to put in his/her portfolio. a max of 3 is allowed
@@ -98,19 +101,24 @@ while try_again:
         exit()
     print (f'Your selection is {tickers}')
     for i in tickers:
-        if i in etf_list and len(tickers) < 4 :
+        if i in etf_list.keys() and len(tickers) < 4 :
             try_again=0
         else:
+            try_again = 1
             if len(tickers) >3:
                 print ("Please...Only UPTO 3 ETFs!!!")
-            try_again=1
-            print("Please enter the correct ticker symbol or EXIT to quit")
+            else:
+                print("Please enter the correct ticker symbol")
             break
-    #Do Beta and Sharpe Ratio analysis
-    tc.xact(tickers_crypto, tickers, etf_list)
-    resp = questionary.text("Type Y to change the ETF selection, ENTER to continue..").ask()
-    if resp == 'Y' or resp == 'y':
-        try_again=1
+
+    if not try_again:
+        #Do Beta and Sharpe Ratio analysis
+        tc.xact(tickers_crypto, tickers, etf_list, start, end)
+        resp = questionary.text("Type Y to change the ETF selection, ENTER to continue..").ask()
+        if resp == 'Y' or resp == 'y':
+            try_again=1
+    
+        
 
 #Get ready for Simulation   
 curr_year =dt.datetime.now().year
@@ -146,6 +154,5 @@ while try_again:
         resp = questionary.text("Type Y to change the allocation of the portfolio, ENTER to continue").ask()
         if resp == 'Y' or resp=='y':
             try_again =1
-        else:
-            try_again = 0
+        
     
