@@ -100,11 +100,11 @@ def do_montecarlo(df):
 #The following code was designed for the interactive CLI interface. The hvplot would not return the control back to the
 #program. so had to change course.
 
-def xact(tickers_crypto, etfs, etf_list):
+def xact(tickers_crypto, etfs, etf_list, start, end):
     print(f'Now, doing the Risk-Return Analysis on {tickers_crypto}  CRYptos..!\n ')
     
-    start = dt.datetime(2017, 1, 1)
-    end = dt.datetime(2022, 1, 1)
+    #start = dt.datetime(2017, 1, 1)
+    #end = dt.datetime(2022, 1, 1)
     
     for ticker in tickers_crypto:
         df1= get_data(ticker, start, end)
