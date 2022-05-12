@@ -5,7 +5,7 @@ import statsmodels.api as sm
 import questionary
 
 def ffanalyse(tkr):
-    print(f'This is FOUR FACTOR ANALYSIS with {tkr}\n\n')
+    #print(f'This is FOUR FACTOR ANALYSIS with {tkr}\n')
 
     end = dt.date(2022,3,31)
     start = dt.date(end.year- 3, end.month, end.day)
@@ -37,7 +37,15 @@ def ffanalyse(tkr):
     #now, the model-OLS - Ordinary Squares/d
     model = sm.OLS(y,X,sm)
     results=model.fit()
-    print(results.summary())
+    beta_m, beta_s, beta_v, beta_mom = results.params
 
-    questionary.text("Type ENTER Key TO Proceed...? ").ask()
+    if beta_s > beta_v:
+        print('____________________________________________________________________________________________________________________________________________________')
+        print (f'Based upon Famma French, {tkr} is behaving like Growth stock, you may want to balance your Portfolio using some Value and Broader Market elements')
+        print('____________________________________________________________________________________________________________________________________________________')
+
+    resp=questionary.text("Type Y to see detailed analysis, or ENTER to continue? ").ask()
+    if resp == 'Y' or resp=='y':
+        print(results.summary())
+        questionary.text("Type ENTER Key TO Proceed...? ").ask()
     

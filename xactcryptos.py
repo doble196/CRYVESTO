@@ -100,13 +100,8 @@ def do_montecarlo(df):
 #The following code was designed for the interactive CLI interface. The hvplot would not return the control back to the
 #program. so had to change course.
 
-def xact(tickers_crypto, etfs):
-    print(f'Thank you for your interest in  {tickers_crypto}  CRYptos..!\n ')
-    
-    x =f'''To assist you in your decision, provided below are:
-    - Beta 
-    - Sharpe Ratios\n'''
-    print(x)
+def xact(tickers_crypto, etfs, etf_list):
+    print(f'Now, doing the Risk-Return Analysis on {tickers_crypto}  CRYptos..!\n ')
     
     start = dt.datetime(2017, 1, 1)
     end = dt.datetime(2022, 1, 1)
@@ -114,30 +109,24 @@ def xact(tickers_crypto, etfs):
     for ticker in tickers_crypto:
         df1= get_data(ticker, start, end)
 
-        etf_name=['S&P 500',
-    'iShares U.S. Technology',
-    'Nasdaq 100',
-    'Invesco S&P 500 Equal Weight Technology',
-    'iShares Evolved U.S. Technology',
-    'iShares Russell 2000',
-    'Vanguard Total Bond Market',
-    'Ark Innovation',
-    'Invesco S&P500 Pure Value']
-
     #etfs=['SPY', 'IYW', 'QQQ', 'RYT', 'IETC', 'IWM', 'BND','ARKK','RPV']
         x=get_sharpe(df1['Close'])
-        print (f"\nSHARPE Ratio for {ticker} is ...{x}\n")
+        print('______________________________________________________________________________________')
+
+        print (f"\nThe Risk Adjusted Return for {ticker} is ...{x}")
     
-        print('The Betas against various Technology Funds are...\n')
+        print(f'The Returns of {ticker} against {etfs}, i.e. Betas against various ETFs, are...\n')
         j=0
         for i in etfs:
 
             df2=get_data(i, start, end)
             b=get_beta(df1['Close'],df2['Close'])
-            print (f'{etf_name[j]}\t{b:.2f}')
+            print (f'{i}\t{etf_list[i]}\t{b:.2f}')
             j+=1
         
-        resp=questionary.text("When you are done digesting Betas and Sharpe, press enter..").ask()
+        print('______________________________________________________________________________________')
+
+        resp=questionary.text("Press ENTER when ready to proceed further..").ask()
     #cp=analyze_and_plot('Cumulative Returns', df1, xcol='Date', plot_type='c')
    # hvplot.show(cp)
 #Removed the code to do the plotting as hvplot couldn't return control back to the porgram
