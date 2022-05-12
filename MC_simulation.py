@@ -69,18 +69,20 @@ def run_montecarlo(tickers_crypto, tickers, num_of_years_of_data, num_of_years_o
 
     initial_investment=10000
     summary_ret = MC_yrs_sim.summarize_cumulative_return()
-    print('_______________________________________')
+    '''print('_______________________________________')
 
     print('Summary statistics from the simulations')
     print('_______________________________________')
     print(summary_ret)
+    '''
 
     ci_lower_ten_cumulative_return = summary_ret[8] * initial_investment
     ci_upper_ten_cumulative_return = summary_ret[9] * initial_investment
 
 # Print the result of your calculations
-    print('_______________________________________________________________________________________________________')
+    print('________________________________________________________________________________________')
 
     print(f'For a Portfolio consisting of {tickers_crypto+tickers} ')
     print(f'              with weights of {weight},' )
     print(f"using 95% Confidence Intervals, a current investment of ${initial_investment:,.02f} \nwould return from ${ci_lower_ten_cumulative_return:,.02f} to ${ci_upper_ten_cumulative_return:,.02f} over the next {num_of_years_of_projection} years.")
+    print('________________________________________________________________________________________')
