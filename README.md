@@ -1,12 +1,4 @@
-<img src= "Images/btc.png" width="930" height="200">
 
-<<<<<<< HEAD
-Analysis file only. Please only pull, no pushes.
-<<<<<<< HEAD
-=======
-# How to Diversify with Cryptocurrency
-## *AN ANALYSIS, BY TEAM CRYVESTO*
->>>>>>> parent of d979b73 (Readme modified)
 
 ---
 
@@ -24,14 +16,27 @@ This application leverages python 3.7 with the following packages:
 * hvplot.pandas: a visualization library included in the PyViz package that can produce advanced charts    
   and interactive visualizations. 
 
-<<<<<<< HEAD
-After cloning the code, 
-    - $ cd Project-1
-    - $ python mailine.py
-    
-=======
->>>>>>> main
-=======
+========
+# How to Diversify with Cryptocurrency
+## *AN ANALYSIS, BY TEAM CRYVESTO*
+
+---
+
+The correlation between stocks and cryptocurrency has been increasing since 2020; now both crypto and US equities appear to be moving in tandem. We hypothesize that crypto prices are currently an indicator for the tech-heavy, growth-heavy Nasdaq 100, and to a lesser extent, are likewise correlated with value stocks (at the opposite end of the equity spectrum from growth). Likewise, cryptocurrencies appear to be highly correlated with one another. We hypothesize that the idea of "cryptodiversification” does not exist, or does so minimally.
+
+For this project, we plan to analyze where cryptocurrency belongs in a portfolio, including how to balance it against equities (growth, value) and how to “cryptodiversify” within a portfolio. We will investigate our hypotheses with data aggregation and a number of plots for visualizing covariance, beta, and correlation. Further, as an intro to cryptocurrencies and to our analysis, we plan to develop a user-interactive interface that allows a user to select various cryptocurrencies, cull relevant news for a selected coin, and view pricing charts. We plan to build-out this app in projects to come. 
+
+---
+## Technologies
+
+This application leverages python 3.7 with the following packages:
+
+* pandas: an open-source library that offers easy-to-use data analysis tools for Python.
+* pathlib: for creation of file paths allowing the application to interact with a computer's filesystem.
+* hvplot.pandas: a visualization library included in the PyViz package that can produce advanced charts    
+  and interactive visualizations. 
+
+
 ---
 ## Installation Guide
 
@@ -82,4 +87,4 @@ Finally, to run the code, in your IDE open the "san_francisco_housing.ipynb" not
 1. features
 2. fixing broken stuff like api calls.
 3. list the keys
->>>>>>> parent of d979b73 (Readme modified)
+
