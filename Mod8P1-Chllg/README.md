@@ -1,11 +1,11 @@
-# FinTech Financial Planning Using Monte Carlo Simulations and API's
+# FinTech Cryptocurrency Analysis Using Monte Carlo Simulations and API's
 
 *A FinTech project to analyze crytocurrencies with 'CryVesto for your Portfolio'*
 
 ---
 
 ## Background
-This program application is for a fintech startup serving as a crypto consulting and research firm. This application compares different indicies and asset classes with an alternative asset of cryptocurrency to measure portfolio performance. It is part of a larger program analysis following the Fama-French Regression Analysis and before the user interface app to help clients make investment decisions. It utilizes a Monte Carlo Simulation app projecting returns based on analysis of major equity and fixed income asset classes with and without cryptocurrency for comparison purposes, as a viable alternate class of investment.   
+This program application is for a fintech startup serving as a crypto consulting and research firm. It compares different indicies and asset classes with an alternative asset of cryptocurrency to measure portfolio performance. It is part of a larger program analysis following the Fama-French Regression Analysis and before the user interface app to help clients make investment decisions. It utilizes a Monte Carlo Simulation app projecting returns based on analysis of major equity and fixed income asset classes with and without cryptocurrency for comparison purposes, as a viable alternate class of investment.   
 
 In setting up this part of the analysis, consideration was given to the major asset classes in constructing a portfolio with cryptocurrencies as an alternate investment. Traditionally the 3 major classes are equities(stocks), fixed income(bonds), and cash or its equivalents like money market funds. For the purpose of this analysis after utilizing the Fama-French regression model, the major asset classes are identified with a proxy selection of ETFs. Attention is given to divide the equities into sub-classes using differing asset class indexes to reflect diversification and risk/return characteristics. The fixed income asset is the traditional asset of stability, low risk and liquidity for balancing a portfolio's risk/returns overtime. Special attention is given to a popular aggressive growth ETF composed mostly of high risk start-ups with innovative technology. We will forcast using different porfolio models and observe how each asset class performs differently in prevailing market conditions, and under certain economic events with and without cryptocurrency. 
 
