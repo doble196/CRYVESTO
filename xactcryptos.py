@@ -87,20 +87,17 @@ def get_sharpe(df):
     annualized_std = std_dev * np.sqrt(year_trading_days)
     sharpe_ratio = average_annual_return / annualized_std
     return sharpe_ratio
-
-# Dane doing this part
-def do_montecarlo(df):
-    print('will do soon')
-    load_dotenv('my_api.env')
     
+#Do the Risk Return Analysis: Here the function does the Sharpe Ratios for the crypto tickers selected and for
+# each selected crypto it does beta calculations against the Funds selected.
+#Arguments:
+# - tickers_crypto: crypto tickers selected
+# - etfs: ETF tickers selected
+# - etf_list: list of funds
+# - start: start date for historical data
+# - end: end date for historical data
 
-
-    
-
-#The following code was designed for the interactive CLI interface. The hvplot would not return the control back to the
-#program. so had to change course.
-
-def xact(tickers_crypto, etfs, etf_list, start, end):
+def do_risk_return_analysis(tickers_crypto, etfs, etf_list, start, end):
     print(f'Now, doing the Risk-Return Analysis on {tickers_crypto}  CRYptos..!\n ')
     
     #start = dt.datetime(2017, 1, 1)
@@ -128,6 +125,6 @@ def xact(tickers_crypto, etfs, etf_list, start, end):
 
         resp=questionary.text("Press ENTER when ready to proceed further..").ask()
     #cp=analyze_and_plot('Cumulative Returns', df1, xcol='Date', plot_type='c')
-   # hvplot.show(cp)
-#Removed the code to do the plotting as hvplot couldn't return control back to the porgram
+    # hvplot.show(cp)
+    #Removed the code to do the plotting as hvplot couldn't return control back to the porgram
 
