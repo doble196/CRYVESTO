@@ -4,11 +4,8 @@ import datetime as dt
 import statsmodels.api as sm
 import questionary
 
-def ffanalyse(tkr):
+def ffanalyse(tkr, start, end):
     #print(f'This is FOUR FACTOR ANALYSIS with {tkr}\n')
-
-    end = dt.date(2022,3,31)
-    start = dt.date(end.year- 3, end.month, end.day)
 
     #tkr='BTC-USD'
     funds=[tkr]
