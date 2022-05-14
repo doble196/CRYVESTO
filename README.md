@@ -20,6 +20,7 @@ The code requires myapi.env, which is there. you may change it to your API keys.
 
 I will remove the API Keys from the final code. 
 
+<<<<<<< HEAD
 After cloning the code, 
     - $ cd Project-1
     - $ python mailine.py
@@ -27,6 +28,9 @@ After cloning the code,
 =======
 ---
 
+=======
+----
+>>>>>>> 8553b9b (Update README.md)
 ## Installation Guide
 
 To run PyViz and its dependencies, it is best to first create a new environment in your terminal and install the PyViz pacakges within this environment by completing the following steps:
@@ -47,13 +51,21 @@ STEP 4: Clone the GitHub repo (the one this file is contained in) into your Term
 
 STEP 5: To install the remaining packages, while in this same repo in your Terminal, enter `pip install -r requirements.txt`.
 
+<<<<<<< HEAD
 ---
+=======
+----
+>>>>>>> 8553b9b (Update README.md)
 
 ## Contributors
 
 Ashok Pandey, Scott Marler, Rensley Ramos, Nicole Roberts, Dane Hayes
 
+<<<<<<< HEAD
 ---
+=======
+----
+>>>>>>> 8553b9b (Update README.md)
 
 ## License
 
@@ -67,6 +79,7 @@ Finally, to run the code, in your IDE open the "san_francisco_housing.ipynb" not
 1. features
 2. experimentations
 3. fixes
+ 
 
 
 
@@ -75,8 +88,6 @@ Finally, to run the code, in your IDE open the "san_francisco_housing.ipynb" not
 1. features
 2. fixing broken stuff like api calls.
 3. list the keys
-
-=======
 
 # How to Diversify with Cryptocurrency
 ## *AN ANALYSIS, BY TEAM CRYVESTO*
@@ -152,4 +163,5 @@ After cloning the code,
     - $ cd Project-1
     - $ python mailine.py
     
->>>>>>> ade7ec0 (fixed input bug)
+=======
+>>>>>>> 8553b9b (Update README.md)
