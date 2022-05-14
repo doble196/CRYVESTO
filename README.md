@@ -165,8 +165,8 @@ The code requires myapi.env, which is there. you may change it to your ALPACA AP
 ## Contributors
 Ashok Pandey - ashok.pragati@gmail.com, www.linkedin.com/in/ashok-pandey-a7201237  
 Nicole Roberts - elle.nicole.roberts@gmail.com, www.linkedin.com/in/nicolerobertsdesigner/
-Dane Hayes - nydane1@gmail.com  
-Scott Marler - scottjmarler@gmail.com 
+Dane Hayes - nydane1@gmail.com
+Scott Marler - scottjmarler@gmail.com, https://www.linkedin.com/in/scott-marler-212040b6/
 Rensley Ramos - ranly196@gmail.com, www.linkedin.com/in/rensley-2-nfty
 
 ---
