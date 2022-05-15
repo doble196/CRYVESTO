@@ -48,7 +48,7 @@ Following are the instructions to install the application from its Github respos
 
 ## Contributors
 Ashok Pandey - ashok.pragati@gmail.com, www.linkedin.com/in/ashok-pandey-a7201237  
-Nicole Roberts - elle.nicole.roberts@gmail.com  
+Nicole Roberts - elle.nicole.roberts@gmail.com, www.linkedin.com/in/nicolerobertsdesigner
 Dane Hayes - nydane1@gmail.com  
-Scott Marler - scottjmarler@gmail.com  
+Scott Marler - scottjmarler@gmail.com, www.linkedin.com/in/scott-marler-212040b6
 Rensley Ramos - ranly196@gmail.com, www.linkedin.com/in/rensley-2-nfty
