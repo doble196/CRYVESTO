@@ -18,20 +18,15 @@ def ffanalyse(tkr, start, end):
     funds=[tkr]
     # get Data for tkr from Yahoo finance using get_data from xactcryptos
     #fundsret=reader.get_data_yahoo(funds, start,end)['Adj Close'].pct_change()
-    fundsret = tc.get_data(funds, start, end)['Adj Close']
-    fundsret_mtl = fundsret.resample('M').agg(lambda x:(x+1).prod() -1)
-    #fundsret_mtl.head()
-    fundsret_mtl = fundsret_mtl[1:]
-    #fundsret_mtl.shape
-
+    fundsret_mtl = tc.get_data(funds, start, end)['Adj Close']
+    
     #get the factor data from Famma French library
-    factors= reader.DataReader('F-F_Research_Data_Factors', 'famafrench',start,end)[0]
-    factors['mom']=reader.DataReader('F-F_Momentum_Factor', 'famafrench',start,end)[0]
-    factors= factors[1:]
-    fundsret_mtl = fundsret_mtl[:len(fundsret_mtl)-1]
-    fundsret_mtl.index = factors.index
+    factors= reader.DataReader('F-F_Research_Data_Factors_daily', 'famafrench',start,end)[0]
+    factors['mom']=reader.DataReader('F-F_Momentum_Factor_daily', 'famafrench',start,end)[0]
+    
     merge = pd.merge(fundsret_mtl, factors, on='Date')
-    merge[['Mkt-RF','SMB','HML', 'RF','mom']] = merge[['Mkt-RF','SMB','HML', 'RF', 'mom']]/100
+    #Seems like RF is already in percentage form, so don't divide RF by 100
+    merge[['Mkt-RF','SMB','HML','mom']] = merge[['Mkt-RF','SMB','HML', 'mom']]/100
     merge[tkr+'-RF']=merge[tkr] - merge.RF
 
     #dependent variable

@@ -161,7 +161,7 @@ if you want to further finetune the analysis, you have the option to select the 
         mc.run_montecarlo(tickers_crypto, tickers, num_of_years_of_data, num_of_years_of_projection, weight)
 
         #Give option to change the allocation of weightage
-        resp = questionary.text("Type Y to change the allocation of the portfolio, ENTER to continue").ask()
+        resp = questionary.text("Type Y to change the allocation of the portfolio, ENTER to Exit").ask()
         if resp == 'Y' or resp=='y':
             try_again =1
         

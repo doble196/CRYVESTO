@@ -51,9 +51,6 @@ The application uses the following Cryptos and ETFs:
 - Tickers used ={'BTC-USD': 'Bitcoin',
                 'ETH-USD': 'Ethereum',
                 'BNB-USD': 'Binance Coin',
-                'SOL-USD': 'Solana',
-                'AVAX-USD': 'Avalanche',
-                'DOT-USD': 'Polkadot',
                 'DOGE-USD': 'Dogecoin'}
 - ETFs used ={'SPY': 'S&P 500  ',
                 'IYW':'iShares U.S. Technology',
@@ -125,7 +122,7 @@ Following are the instructions to install the application from its Github respos
     2. %git clone URL_link_that_was_copied_in_step_1_above   
     3. %ls       
       Project-1   
-    4. %cd Project-1     
+    4. %cd Project-1/CRYVESTO_app     
 
 At this point you will have the the entire application files in the current directory as follows:
 
@@ -133,6 +130,7 @@ At this point you will have the the entire application files in the current dire
 * cryvesto.py  - the main program for the app
 * fourfactor.py - the Famm French Four Factor analysis custom library
 * xactcryptos.py - the library of functions used for getting data, sharpe-ratios, betas etc
+* load_data.py - library of functions to fetch and load data for MC Simulation
 * MC_simulation.py - the library with functions to run the MonteCarlo simulation
 * MCForecastTools.py - MonteCarlo simulation library
 
@@ -149,8 +147,7 @@ Setup the environment using conda as follows:
 ### Run the Application
 The code requires myapi.env, which is there. you may change it to your ALPACA API keys. It is currently set to my API keys, which might work for now. 
     
-    7. %cd CRYVESTO_app
-    8. %python cryvesto.py
+    7. %python cryvesto.py
 
 ---
 
