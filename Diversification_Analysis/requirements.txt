@@ -1,0 +1,9 @@
+pandas
+pathlib
+matplotlib-inline 
+statsmodels.api
+getFamaFrenchFactors
+sklearn
+seaborn
+yfinance
+hvplot.pandas
