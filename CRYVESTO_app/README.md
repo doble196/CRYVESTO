@@ -84,13 +84,13 @@ The application uses the following Cryptos and ETFs:
     - gets the Sharpe ratios using **get_sharpe**
     - gets the betas against each ETF using **get_beta** 
     - displays the Sharpe and Betas
-* The user is asked again if s/he wants to change the ETF selection based upon the results of the previous selection
+* The user is asked again if s/he wants to change the ETF selection based upon the results of the previous selection.
 
 ### Assigning Weights and Portfolio Performance Projection
 
-*  the user is asked to assign weights to the selected Cryptos and ETFs. The sum of weights should be 1 and is validated. Reprompt if necessary
-* the user is asked for the number of years of historical data to use for the simulation. At present s/he can select from 2-5 years, 3 being the default.
-* call **run_montecarlo** function (from our library, MC_simulation.py):
+* The user is asked to assign weights to the selected Cryptos and ETFs. The sum of weights should be 1 and is validated. Reprompt if necessary.
+* The user is asked for the number of years of historical data to use for the simulation. At present s/he can select from 2-5 years, 3 being the default.
+* Call **run_montecarlo** function (from our library, MC_simulation.py):
     - runs the MonteCarlo simulation
     - displays the results of the simulation
         - Number of years of historical data
@@ -105,7 +105,7 @@ The application uses the following Cryptos and ETFs:
 
 ## Technologies
 The application is developed using:  
-* Language: Python 3.7,   
+* Language: Python 3.7   
 * Packages/Libraries: Pandas, os, Alpaca SDK, Resources, json, MCForecastTools for MCSimulation, matplotlib, yfinance
 * Development Environment: VS Code and Terminal, Anaconda 2.1.1 with conda 4.11.0, Jupyterlab 3.2.9  
 * OS: Mac OS 12.1
@@ -115,8 +115,8 @@ The application is developed using:
 Following are the instructions to install the application from its Github respository.  
 
 ### Clone the application code from Github as follows:
-* copy the URL link of the application from its Github repository     
-* open the Terminal window and clone as follows:
+* Copy the URL link of the application from its Github repository     
+* Open the Terminal window and clone as follows:
 
     1. %cd to_your_preferred_directory_where_you want_to_store_this_application  
     2. %git clone URL_link_that_was_copied_in_step_1_above   
@@ -152,9 +152,9 @@ The code requires myapi.env, which is there. you may change it to your ALPACA AP
 ---
 
 **NOTE**:
-* Your prompt will look something like (dev) ashokpandey@Ashoks-MBP Project-1 %,  with:  
+* Your prompt will look something like (dev) ashokpandey@Ashoks-MBP Project-1 %, with:  
     - "(dev)" indicating the activated "dev" environment,   
-    - ' ashokpandey@Ashoks-MBP ' will be different for you as per your environment, and   
+    - 'ashokpandey@Ashoks-MBP' will be different for you as per your environment, and   
     - 'Project-1' directory is where cryvesto.py is located.  
     - '%' sign is the shell prompt, it could be a $ sign on your machine  
 
@@ -162,10 +162,10 @@ The code requires myapi.env, which is there. you may change it to your ALPACA AP
 
 ## Contributors
 Ashok Pandey - ashok.pragati@gmail.com, www.linkedin.com/in/ashok-pandey-a7201237  
-Nicole Roberts - elle.nicole.roberts@gmail.com  
+Nicole Roberts - elle.nicole.roberts@gmail.com, www.linkedin.com/in/nicolerobertsdesigner
 Dane Hayes - nydane1@gmail.com  
-Scott Marler -scottjmarler@gmail.com  
-Rensley Ramos -   
+Scott Marler -scottjmarler@gmail.com, www.linkedin.com/in/scott-marler-212040b6
+Rensley Ramos - ranly196@gmail.com, www.linkedin.com/in/rensley-2-nfty
 
 ---
 
