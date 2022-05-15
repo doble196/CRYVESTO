@@ -32,10 +32,10 @@ Following are the instructions to install the application from its Github respos
     3. %ls       
       Project-1   
     4. %cd Project-1
-    5. %ls   
+    5. %ls   (will list the following among some other files)
       AssetFunds_Analysis  
       CRYVESTO_app  
-      Diversification_Analysis 
+      Diversification_Analysis   
       README.md (you are reading this file)
         
       
