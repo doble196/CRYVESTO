@@ -24,8 +24,8 @@ You can view the details of the [CRYVESTO app here](./CRYVESTO_app/README.md)
 Following are the instructions to install the application from its Github respository.  
 
 ### Clone The Code from Github as Follows:
-* copy the URL link of the application from its Github repository     
-* open the Terminal window and clone as follows:
+* Copy the URL link of the application from its Github repository     
+* Open the Terminal window and clone as follows:
 
     1. %cd to_your_preferred_directory_where_you want_to_store_this_application  
     2. %git clone URL_link_that_was_copied_in_step_1_above   
